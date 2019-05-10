@@ -94,8 +94,6 @@ export default {
   & #map
     width: 100%
     height: 100%
-    min-height: 300px
-    max-height: 470px
   & .error
     padding: 8px
     margin: 16px 0

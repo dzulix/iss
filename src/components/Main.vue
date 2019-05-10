@@ -76,6 +76,7 @@ export default {
       background: #eee
       width: 15%
       min-width: 200px
+      max-width: 400px
       padding: 16px
       flex-grow: 1
       & > button
@@ -105,15 +106,20 @@ export default {
           background: #d9d9d9
 
     & > .content
-      min-width: 400px
+      min-width: 250px
       padding: 16px
       flex-grow: 2
-
+    @media only screen and (max-width: 550px)
+      flex-direction: column
+      & .side-menu
+        max-width: unset
+        width: 100%
+        flex-grow: unset
   & > footer
     row(center,center)
     font-size: .8em
     background: #ccc
     width: 100%
-    height: 50px
+    min-height: 50px
 
 </style>

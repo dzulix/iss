@@ -13,6 +13,8 @@ describe('Map', () => {
       expect(vm.error.length).not.toBe(0);
       expect(wrapper.html()).toContain('<div class="error">');
     }
+    vm.error = '';
+    expect(wrapper.html()).not.toContain('<div class="error">');
   });
 
   test('emits an event', () => {
